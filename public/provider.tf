@@ -5,6 +5,7 @@ terraform {
 }
 
 provider "google" {
+  version = "3.17.0"
   project = var.app_project
   credentials = file(var.gcp_auth_file)
   region  = var.gcp_region_1
@@ -12,6 +13,7 @@ provider "google" {
 }
 
 provider "google-beta" {
+  version = "3.17.0"
   project = var.app_project
   credentials = file(var.gcp_auth_file)
   region  = var.gcp_region_1
